@@ -23,9 +23,9 @@
 <body>
 <header>
     <nav>
-        <div class="logo">
+        <div class="logo" style="padding: 10px;">
             <!--         logo from flipkart offical site -->
-            <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png" alt="">
+            <strong style="color: white; font-size: 20pt; font-family: Tahoma;">VivKart</strong>
         </div>
         <ul>
             <li><a href=" Home.html">Home</a></li>

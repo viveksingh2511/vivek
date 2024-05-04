@@ -30,7 +30,7 @@ public class HomeController {
         } else {
             // If authentication fails, add an error message to the model and return to the login page
             model.addAttribute("error", "Invalid username or password. Please try again.");
-            return "redirect:index"; // Assuming your login page is named "login.html"
+            return "index"; // Assuming your login page is named "login.html"
         }
     }
 
