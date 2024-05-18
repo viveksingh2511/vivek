@@ -13,7 +13,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zain's online shopping site</title>
+    <title>VivKart's online shopping site</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/utils.css">
     <link rel="stylesheet" href="/css/my_responsivness.css">
@@ -28,7 +28,7 @@
             <strong style="color: white; font-size: 20pt; font-family: Tahoma;">VivKart</strong>
         </div>
         <ul>
-            <li><a href=" Home.html">Home</a></li>
+            <li><a href="Home.html">Home</a></li>
             <li><a href="About.html">About</a></li>
             <li><a href="Contact.html">Contact me</a></li>
         </ul>
@@ -279,7 +279,7 @@
     </div>
 </main>
 <footer class="flex-all-center">
-    <p>Zain&copy; All Rights Reserved</p>
+    <p>VivKart&copy; All Rights Reserved</p>
 </footer>
 
 </body>
