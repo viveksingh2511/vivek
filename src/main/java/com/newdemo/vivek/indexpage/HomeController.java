@@ -1,14 +1,14 @@
 package com.newdemo.vivek.indexpage;
 
+import com.newdemo.vivek.entity.Registration;
 import com.newdemo.vivek.service.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.Map;
 
 @Controller
 public class HomeController {
@@ -30,8 +30,24 @@ public class HomeController {
         } else {
             // If authentication fails, add an error message to the model and return to the login page
             model.addAttribute("error", "Invalid username or password. Please try again.");
+            // If authentication fails, add Register now to the model and return to the login page
+            model.addAttribute("reg", "Register now");
             return "index"; // Assuming your login page is named "login.html"
         }
+    }
+    @RequestMapping("/Registers")
+    public String goToHome1() {
+        return "Registration";
+    }
+//    @RequestMapping(value = "/Register")
+//    public String goToHome2() {
+//        return "login";
+//    }
+
+    @PostMapping("/Register")
+    public String registerUser(@RequestParam Map<String, Object> param) {
+         authService.saveUser(param);
+        return "login";
     }
 
 }

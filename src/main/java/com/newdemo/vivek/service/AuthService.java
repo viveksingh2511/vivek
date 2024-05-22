@@ -5,6 +5,8 @@ import com.newdemo.vivek.repo.RegistrationRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Map;
+
 @Service
 public class AuthService {
 
@@ -23,6 +25,16 @@ public class AuthService {
             }
         }
         return false;
+    }
+    public Registration saveUser(Map<String, Object> param){
+        String name = (String) param.get("name");
+        String password = (String) param.get("password");
+        String email = (String) param.get("email");
+        Registration registration = new Registration();
+        registration.setEmail(email);
+        registration.setName(name);
+        registration.setPassword(password);
+        return registrationRepo.save(registration);
     }
 
 }

@@ -20,8 +20,10 @@
     <form class="login-container" method="post" action="/login">
         <p><input type="email" placeholder="Email" id="email" name="email"></p>
         <p><input type="password" placeholder="Password" id="password" name="password"></p>
+        <p style="text-align: right;"><a href="/Registers" style="text-decoration: none">${reg}</a></p>
         <p><input type="submit" value="Log in"></p>
-    </form>
+    </form >
+
 </div>
 </body>
 </html>

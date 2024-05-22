@@ -11,6 +11,6 @@
     <title>Login</title>
 </head>
 <body>
-  <h1 style="color: red">Error</h1>
+  <h1 style="color: green; text-decoration: none; font-size: 14pt; text-align: center">Register Sucessful <a href="/">Click Here to login</a></h1>
 </body>
 </html>
